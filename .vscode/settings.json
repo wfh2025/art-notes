@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "selection",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoClean.run": "never",
+}
