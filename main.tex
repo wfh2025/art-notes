@@ -1,0 +1,49 @@
+%!TEX program = xelatex
+
+\documentclass[
+	paper = a4paper, 
+	UTF8,
+	oneside,
+	zihao=-4, 
+	linespread = 1.5, 
+	heading = true,
+]{ctexbook}
+
+\usepackage{state-of-the-art}
+
+\title{落霞与孤鹜齐飞，秋水共长天一色}
+\author{
+	吴尽思 \\ wfh2011@163.com
+}
+
+% 指定某个日期: \zhdate{2025/01/01}
+\date{\zhtoday}
+
+\begin{document}
+\maketitle
+
+\frontmatter
+\pagenumbering{roman}
+\section*{前言}\label{sec:preface}
+\subfile{preface/preface.tex}
+
+\tableofcontents
+\listoffigures
+\lstlistoflistings
+
+\mainmatter
+\pagenumbering{arabic}
+
+\part{编程语言}
+\subfile{notes/swift.tex}
+\subfile{notes/cplusplus.tex}
+
+
+\part{计算机网络}
+\subfile{net/ch12.tex} \label{tcp-ip:ch12}
+\subfile{net/ch13.tex}
+
+\printbibliography[title={参考文献}]
+
+
+\end{document}
