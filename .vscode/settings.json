@@ -14,6 +14,11 @@
     "latex-workshop.showContextMenu": true,
     "latex-workshop.message.error.show": true,
     "latex-workshop.message.warning.show": true,
+    "latex-workshop.formatting.latexindent.path": "/opt/homebrew/bin/latexindent",
+    "latex-workshop.formatting.latex": "latexindent",
+    "[tex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux",
         "*.bbl",
