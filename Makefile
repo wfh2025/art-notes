@@ -10,7 +10,8 @@ IGNORE = \
 	*.bbl-SAVE-ERROR \
 	*.fls \
 	*.lol \
-	*.listing
+	*.listing \
+	indent.log
 
 all: main.pdf
 
