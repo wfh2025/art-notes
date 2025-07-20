@@ -1,3 +1,7 @@
+# 指定文件
+main.pdf
+
+
 # 系统文件
 **/.DS_Store
 
@@ -24,6 +28,8 @@
 **/*.synctex.gz
 **/*.nav
 **/*.vrb
+**/*.lol
+**/*.xdv
 
 # 编辑器文件
 **/.texpadtmp
