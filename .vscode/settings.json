@@ -1,4 +1,9 @@
 {
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+    "editor.rulers": [],
+    "editor.lineNumbers": "on",
+    "editor.cursorBlinking": "smooth",
     "editor.tabSize": 2,
     "editor.fontSize": 14,
     "editor.wordWrap": "on",
