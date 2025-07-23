@@ -1,7 +1,7 @@
 {
     "files.eol": "\n",
     "files.encoding": "utf8",
-    "editor.rulers": [],
+    "editor.rulers": [150],
     "editor.lineNumbers": "on",
     "editor.cursorBlinking": "smooth",
     "editor.tabSize": 2,
@@ -10,7 +10,7 @@
     "editor.formatOnSave": false,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "selection",
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "霞鹭文楷, Menlo, Monaco, 'Courier New', monospace",
     "files.autoSave": "afterDelay",
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.autoClean.run": "onFailed",
