@@ -5,6 +5,7 @@
 \usepackage[inline]{enumitem}
 \usepackage{listings}
 \usepackage[table]{xcolor}
+\usepackage[listings, skins, breakable, xparse, raster, hooks, theorems, fitting]{tcolorbox}
 
 % 常量
 \renewcommand{\listfigurename}{示意图}
@@ -225,3 +226,9 @@
 \lstnewenvironment{envTxt}[1][]{\lstset{style=lstCodeStylePlainText, #1}}{}
 \newcommand{\inputCppFile}[2][]{\lstinputlisting[style=lstCodeStyleCpp, caption={#1}]{#2}}
 \newcommand{\inputSwiftFile}[2][]{\lstinputlisting[style=lstCodeStyleSwift, caption={#1}]{#2}}
+
+\newtcolorbox{artCaution} {
+    colback = red!5!white,
+    colframe = red!75!black,
+    title = {注意},
+}
