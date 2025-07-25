@@ -30,6 +30,8 @@ main.pdf
 **/*.vrb
 **/*.lol
 **/*.xdv
+**/*.bcf
+**/*.run.xml
 
 # 编辑器文件
 **/.texpadtmp
