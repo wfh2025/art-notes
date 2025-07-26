@@ -1,7 +1,7 @@
 PROJ_DIR 	:= $(CURDIR)
 RM 			:= rm -f
 
-XELATEX :=latexmk -r $(PROJ_DIR)/latexmkrc -xelatex
+XELATEX :=latexmk -r "$(PROJ_DIR)/latexmkrc" -xelatex
 
 IGNORE = \
 	*.aux \
@@ -28,7 +28,7 @@ debug: debug.tex
 bug:
 	grep -inr -C 5 'LaTeX Error' *.log
 clean: 
-	latexmk -r $(PROJ_DIR)/latexmkrc -C && $(RM) $(IGNORE)
+	latexmk -r "$(PROJ_DIR)/latexmkrc" -C && $(RM) $(IGNORE)
 print-%:
 	@echo $* = $($*)
 .PHONY: all install view clean bug FORCE_MAKE
