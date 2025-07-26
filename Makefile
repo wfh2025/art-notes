@@ -11,6 +11,8 @@ IGNORE = \
 	*.fls \
 	*.lol \
 	*.listing \
+	*.bcf \
+	*.run.xml \
 	indent.log
 
 all: main.pdf
