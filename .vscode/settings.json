@@ -21,6 +21,7 @@
     "latex-workshop.message.warning.show": true,
     "latex-workshop.formatting.latexindent.path": "/opt/homebrew/bin/latexindent",
     "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.tex-fmt.path": "/opt/homebrew/bin/tex-fmt",
     "[tex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
@@ -61,5 +62,6 @@
         "*.synctex.gz(busy)",
         "*.nav",
         "*.vrb"
-    ]
+    ],
+    "workbench.colorTheme": "Visual Studio Dark - C++"
 }
