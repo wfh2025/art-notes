@@ -31,4 +31,4 @@ clean:
 	latexmk -r "$(PROJ_DIR)/latexmkrc" -C && $(RM) $(IGNORE)
 print-%:
 	@echo $* = $($*)
-.PHONY: all install view clean bug FORCE_MAKE
+.PHONY: all install view clean bug pretty FORCE_MAKE
