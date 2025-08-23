@@ -25,6 +25,8 @@ pvc: main.tex
 	$(XELATEX) -pvc -silent $<
 bug:
 	grep -inr -C 5 'LaTeX Error' *.log
+pretty:
+	find "${PROJ_DIR}" -type f \( -name "*.tex" -o -name "*.sty" \) -exec tex-fmt --config="${PROJ_DIR}/tex-fmt.toml" {} \;
 clean: 
 	latexmk -r "$(PROJ_DIR)/latexmkrc" -C && $(RM) $(IGNORE)
 print-%:
