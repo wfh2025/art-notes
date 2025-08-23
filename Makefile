@@ -23,8 +23,6 @@ view: main.tex
 	$(XELATEX) -pv -silent -time $<
 pvc: main.tex
 	$(XELATEX) -pvc -silent $<
-debug: debug.tex
-	$(XELATEX) -pvc -silent $<
 bug:
 	grep -inr -C 5 'LaTeX Error' *.log
 clean: 
