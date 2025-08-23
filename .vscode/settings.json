@@ -12,6 +12,9 @@
     "editor.renderWhitespace": "selection",
     "editor.fontFamily": "霞鹭文楷, Menlo, Monaco, 'Courier New', monospace",
     "files.autoSave": "afterDelay",
+        "[tex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.autoClean.run": "onFailed",
     "latex-workshop.intellisense.package.enabled": true,
@@ -22,22 +25,6 @@
     "latex-workshop.formatting.latexindent.path": "/opt/homebrew/bin/latexindent",
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.formatting.tex-fmt.path": "/opt/homebrew/bin/tex-fmt",
-    "[tex]": {
-        "editor.defaultFormatter": "James-Yu.latex-workshop"
-    },
-    "terminal.integrated.profiles.windows": {
-        "MSYS2-shell-cmd": {
-            "path": "D:\\install-dir\\msys64\\msys2_shell.cmd",
-            "args": [
-                        "-defterm", 
-                        "-here", 
-                        "-no-start", 
-                        "-ucrt64"
-                    ],
-            "icon": "terminal-bash"
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "MSYS2-shell-cmd",
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux",
         "*.bbl",
@@ -63,5 +50,18 @@
         "*.nav",
         "*.vrb"
     ],
+    "terminal.integrated.profiles.windows": {
+        "MSYS2-shell-cmd": {
+            "path": "D:\\install-dir\\msys64\\msys2_shell.cmd",
+            "args": [
+                        "-defterm", 
+                        "-here", 
+                        "-no-start", 
+                        "-ucrt64"
+                    ],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "MSYS2-shell-cmd",
     "workbench.colorTheme": "Visual Studio Dark - C++"
 }
