@@ -4,57 +4,51 @@
 \chapter{Swift}
 \section{基本操作}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {基本操作}]{
-    res/pl/swfit/code/003-code-basic.swift
+  res/pl/swfit/code/003-code-basic.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/003-result-basic.txt
+  res/pl/swfit/code/003-result-basic.txt
 }
-
 
 \section{函数}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {函数}]{
-    res/pl/swfit/code/006-code-function.swift
+  res/pl/swfit/code/006-code-function.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/006-result-function.txt
+  res/pl/swfit/code/006-result-function.txt
 }
-
 
 \section{可选类型}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {可选类型}]{
-    res/pl/swfit/code/004-code-optional.swift
+  res/pl/swfit/code/004-code-optional.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/004-result-optional.txt
+  res/pl/swfit/code/004-result-optional.txt
 }
-
 
 \section{控制流}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {控制流示例}]{
-    res/pl/swfit/code/005-code-control.swift
+  res/pl/swfit/code/005-code-control.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/005-result-control.txt
+  res/pl/swfit/code/005-result-control.txt
 }
-
 
 \section{枚举}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {枚举}]{
-    res/pl/swfit/code/001-code-enum.swift
+  res/pl/swfit/code/001-code-enum.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/001-result-enum.txt
+  res/pl/swfit/code/001-result-enum.txt
 }
-
 
 \section{集合}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {集合类型}]{
-    res/pl/swfit/code/002-code-container.swift
+  res/pl/swfit/code/002-code-container.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/002-result-container.txt
+  res/pl/swfit/code/002-result-container.txt
 }
-
 
 \section{闭包}
 \emph{闭包}是自包含的函数代码块，类似其他编程语言的匿名函数(Lambdas)。
@@ -62,16 +56,16 @@
 
 闭包形式:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 全局函数是一个有名字但不会捕获任何值的闭包
-    \item 嵌套函数是一个有名字并可以捕获其封闭函数域内值的闭包
-    \item 闭包表达式利用轻量级语法所写的可以捕获其上下文变量/常量的匿名闭包
+  \item 全局函数是一个有名字但不会捕获任何值的闭包
+  \item 嵌套函数是一个有名字并可以捕获其封闭函数域内值的闭包
+  \item 闭包表达式利用轻量级语法所写的可以捕获其上下文变量/常量的匿名闭包
 \end{enumerate}
 闭包鼓励场景语法优化，主要包括:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 利用上下文推断参数和返回值类型
-    \item 单表达式闭包省略return关键字
-    \item 参数名称缩写
-    \item 尾随闭包语法
+  \item 利用上下文推断参数和返回值类型
+  \item 单表达式闭包省略return关键字
+  \item 参数名称缩写
+  \item 尾随闭包语法
 \end{enumerate}
 
 \subsection{尾随闭包}
@@ -81,16 +75,16 @@
 如果一个函数接受多个闭包，省略第一个尾随闭包的参数标签，其余尾随闭包添加标签。
 
 \lstinputlisting[style = lstCodeStyleSwift, caption = {闭包}]{
-    res/pl/swfit/code/016-code-closure.swift
+  res/pl/swfit/code/016-code-closure.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/016-result-closure.txt
+  res/pl/swfit/code/016-result-closure.txt
 }
 
 \subsection{值捕获}
 闭包可以在其定义的上下文中捕获常量/变量。
 即使定义这些常量/变量作用域不存在，
-    闭包仍然可以在闭包函数体内引用和修改这些值。
+闭包仍然可以在闭包函数体内引用和修改这些值。
 
 \begin{lstlisting}[style = lstCodeStyleSwift, caption = {值捕获}]
 import Foundation
@@ -146,10 +140,10 @@ Program ended with exit code: 0
 
 \section{类和结构体}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {类和结构体}]{
-    res/pl/swfit/code/008-code-class-struct.swift
+  res/pl/swfit/code/008-code-class-struct.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/008-result-class-struct.txt
+  res/pl/swfit/code/008-result-class-struct.txt
 }
 \subsection{结构体和类对比}
 \subsubsection{结构体类型的成员逐一构造器}
@@ -161,19 +155,19 @@ Program ended with exit code: 0
 \emph{值类型}: 当它被复制给一个变量/常量或被传递给一个函数时，其值会被\emph{拷贝}。
 常见的值类型有:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 结构体
-    \item 枚举
-    \item 基本类型(底层是用结构体实现):
-        \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-            \item 整数(integer)
-            \item 浮点数(floating-point number)
-            \item 布尔值(bool)
-            \item 字符串(string)
-            \item 数组(array)
-            \item 字典(dictionary)
-        \end{enumerate}
+  \item 结构体
+  \item 枚举
+  \item 基本类型(底层是用结构体实现):
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+      \item 整数(integer)
+      \item 浮点数(floating-point number)
+      \item 布尔值(bool)
+      \item 字符串(string)
+      \item 数组(array)
+      \item 字典(dictionary)
+    \end{enumerate}
 \end{enumerate}
-标准库的集合(数组/字典/字符串)，对复制进行了优化以降低性能: 
+标准库的集合(数组/字典/字符串)，对复制进行了优化以降低性能:
 新集合不会立即复制，而是与原集合共享同一份内存和元素。
 仅当集合某个副本要被修改前，才会复制元素。
 
@@ -181,7 +175,7 @@ Program ended with exit code: 0
 \emph{引用类型}: 引用类型在被赋予一个变量/常量或者被传递到一个函数时，其值\emph{不会}被拷贝。
 因此，使用的是已存在实例的引用，而不是拷贝。
 类是引用类型。
-注意: 用let的方式引用一个类实例，依然可以修改实例属性值，例如: 
+注意: 用let的方式引用一个类实例，依然可以修改实例属性值，例如:
 \lstinline|class VideoMode{}; let x = VideoMode()|，x不存储实例，仅是对实例的引用。
 所以，改变的是底层实例的属性，而不是指向VideoMode常量引用的值。
 
@@ -191,32 +185,31 @@ Program ended with exit code: 0
 \subsubsection{指针}
 如果需要直接与指针交互，可以使用标准库提供的指针还缓冲区类型。
 
-
 \section{属性}
 \emph{属性}将值与类、结构体、枚举关联。
 \lstinputlisting[style = lstCodeStyleSwift, caption = {属性基本使用}]{
-    res/pl/swfit/code/017-code-attribute.swift
+  res/pl/swfit/code/017-code-attribute.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/017-result-attribute.txt
+  res/pl/swfit/code/017-result-attribute.txt
 }
 
 \subsection{存储属性}
 \emph{存储属性}: 将常量/变量存储为实例一部分。针对存储属性，须知:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 存储属性用于\emph{类}和\emph{结构体}
-    \item 存储属性分类:
-        \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-            \item 常量存储属性
-            \item 变量存储属性
-            \item 延时加载存储属性
-        \end{enumerate}
+  \item 存储属性用于\emph{类}和\emph{结构体}
+  \item 存储属性分类:
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+      \item 常量存储属性
+      \item 变量存储属性
+      \item 延时加载存储属性
+    \end{enumerate}
 \end{enumerate}
 
 \subsubsection{常量结构体实例的存储属性}
 创建了一个\emph{结构体实例}并将其赋值给常量，
-    无法修改该实例任何属性，
-    即使声明为可变属性也不允许。
+无法修改该实例任何属性，
+即使声明为可变属性也不允许。
 因为结构体属于\emph{值类型}，值类型实例被声明称常量，所有属性也变成常量。
 
 \emph{引用类型实例}赋值给常量后，允许修改该实例的可变属性。
@@ -224,10 +217,10 @@ Program ended with exit code: 0
 \subsubsection{延时加载存储属性}
 \emph{延时加载存储属性}是指当第一次被调用的时候才会计算其初始值的属性。
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 属性前用lazy标识延时加载存储属性；
-    \item 必须将延时加载存储属性声明成\emph{变量}；
-    \item 被标记lazy的属性在没有初始化就同时被多个线程访问，
-        无法保证属性只会被初始化一次。
+  \item 属性前用lazy标识延时加载存储属性；
+  \item 必须将延时加载存储属性声明成\emph{变量}；
+  \item 被标记lazy的属性在没有初始化就同时被多个线程访问，
+    无法保证属性只会被初始化一次。
 \end{enumerate}
 
 \subsubsection{存储属性和实例变量}
@@ -236,7 +229,7 @@ Program ended with exit code: 0
 \subsection{计算属性}
 \emph{计算属性}是直接计算(不是存储)值。
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 计算属性用于\emph{类}、\emph{结构体}和\emph{枚举}
+  \item 计算属性用于\emph{类}、\emph{结构体}和\emph{枚举}
 \end{enumerate}
 \subsubsection{简化Setter声明}
 见代码，略。
@@ -251,14 +244,14 @@ Program ended with exit code: 0
 \emph{属性观察器}: 监控和响应属性值变化，触发自定义操作，即使新值和当前值相同也不例外。
 属性管理器的使用条件:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 自定义存储属性
-    \item 继承存储属性/计算属性: 在子类通过重写属性添加属性观察器
+  \item 自定义存储属性
+  \item 继承存储属性/计算属性: 在子类通过重写属性添加属性观察器
 \end{enumerate}
 相关注意事项:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 父类初始化方法调用后，子类构造器给父类属性赋值，会调用父类willSet/didSet
-    \item 父类初始化方法调用前，给子类属性赋值不会调用子类属性观察器
-    \item 带有观察器的属性通过in-out方式传入函数，也会调用willSet/didSet
+  \item 父类初始化方法调用后，子类构造器给父类属性赋值，会调用父类willSet/didSet
+  \item 父类初始化方法调用前，给子类属性赋值不会调用子类属性观察器
+  \item 带有观察器的属性通过in-out方式传入函数，也会调用willSet/didSet
 \end{enumerate}
 
 \subsection{属性包装器}
@@ -307,10 +300,10 @@ print("line: \(#line)", "\(type(of: teacherBir))")
 \subsubsection{设置被包装属性的初始值}
 调用构造器规则:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 包装器应用于属性且没有设定初始值时，使用init()构造器来设置包装器
-    \item 为属性指定初始值时，使用 init(wrappedValue:)构造器来设置包装器
-    \item 在自定义特性后面把实参写在括号里时，使用接受这些实参的构造器来设置包装器
-    \item 当包含属性包装器实参时，也可以使用赋值来指定初始值
+  \item 包装器应用于属性且没有设定初始值时，使用init()构造器来设置包装器
+  \item 为属性指定初始值时，使用 init(wrappedValue:)构造器来设置包装器
+  \item 在自定义特性后面把实参写在括号里时，使用接受这些实参的构造器来设置包装器
+  \item 当包含属性包装器实参时，也可以使用赋值来指定初始值
 \end{enumerate}
 
 \begin{lstlisting}[style = lstCodeStyleSwift, caption = {属性包装器设置被包装属性初始值}]
@@ -363,7 +356,6 @@ let _ = Elements()
 
 \end{lstlisting}
 
-
 \subsubsection{从属性包装器中呈现一个值}
 \begin{lstlisting}[style = lstCodeStyleSwift, caption = {从属性包装器中呈现一个值}]
     @propertyWrapper
@@ -379,20 +371,20 @@ let _ = Elements()
                 self.projectedValue = self.num / 100
             }
         }
-    
+
         init() {
             self.num = 300
             self.projectedValue = self.num / 100
         }
     }
-    
+
     struct Element {
         @Small var x1: Int
     }
-    
+
     var ele = Element()
     ele.x1 = 9
-    print("line: \(#line)", "\(ele.$x1)")    
+    print("line: \(#line)", "\(ele.$x1)")
 \end{lstlisting}
 
 \subsection{全局变量和局部变量}
@@ -400,35 +392,31 @@ let _ = Elements()
 \subsubsection{类型属性语法}
 \subsection{获取和设置类型属性的值}
 
-
-
-
 \section{扩展}
 \emph{扩展}不需要访问被扩展类型源代码，就能完成扩展能力。
 \emph{扩展}可以给现有的类/结构体/枚举/协议添加新功能。
 扩展可以做到:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 添加计算实例属性和计算类属性
-    \item 定义实例方法和类方法
-    \item 添加新构造器
-    \item 定义下标
-    \item 定义和使用新的嵌套类型
-    \item 使已存在类型遵循一个协议
+  \item 添加计算实例属性和计算类属性
+  \item 定义实例方法和类方法
+  \item 添加新构造器
+  \item 定义下标
+  \item 定义和使用新的嵌套类型
+  \item 使已存在类型遵循一个协议
 \end{enumerate}
 \begin{artCaution}
-    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-        \item 扩展可以给类型添加新功能，但不能\emph{重写}已存在功能
-        \item 扩展可以添加新的计算属性，但是不能添加存储属性
-    \end{enumerate}
+  \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item 扩展可以给类型添加新功能，但不能\emph{重写}已存在功能
+    \item 扩展可以添加新的计算属性，但是不能添加存储属性
+  \end{enumerate}
 \end{artCaution}
 
 \lstinputlisting[style = lstCodeStyleSwift, caption = {extension}]{
-    res/pl/swfit/code/011-code-extension.swift
+  res/pl/swfit/code/011-code-extension.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/011-result-extension.txt
+  res/pl/swfit/code/011-result-extension.txt
 }
-
 
 \section{协议}
 \emph{协议}规定用来实现某一特定任务或者功能的方法/属性等。
@@ -477,30 +465,30 @@ let _ = Elements()
 \end{lstlisting}
 
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 协议要求遵循协议的类型提供特定名称和类型的实例属性或类型属性
-    \item 协议不指定属性是计算属性还是存储属性，只指定属性名称和类型
-    \item 协议可以指定属性是可读的还是可读可写的
-    \item 协议本身未实现功能，但可以被当作功能完备功能使用，称作: 存在类型，来自: 存在类型T，遵循协议T
-    \item 添加AnyObject到协议继承列表，限制协议只能被类类型遵循(不能是结构体/枚举)
+  \item 协议要求遵循协议的类型提供特定名称和类型的实例属性或类型属性
+  \item 协议不指定属性是计算属性还是存储属性，只指定属性名称和类型
+  \item 协议可以指定属性是可读的还是可读可写的
+  \item 协议本身未实现功能，但可以被当作功能完备功能使用，称作: 存在类型，来自: 存在类型T，遵循协议T
+  \item 添加AnyObject到协议继承列表，限制协议只能被类类型遵循(不能是结构体/枚举)
 \end{enumerate}
 \begin{artCaution}
-实现协议中的mutating方法时，类类型，不用写mutating关键字。
-结构体/枚举则必须写mutating关键字。
-如果类已经被标记为 final，那么不需要在协议构造器的实现中使用 required 修饰符
+  实现协议中的mutating方法时，类类型，不用写mutating关键字。
+  结构体/枚举则必须写mutating关键字。
+  如果类已经被标记为 final，那么不需要在协议构造器的实现中使用 required 修饰符
 \end{artCaution}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {协议}]{
-    res/pl/swfit/code/012-code-protocol.swift
+  res/pl/swfit/code/012-code-protocol.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/012-result-protocol.txt
+  res/pl/swfit/code/012-result-protocol.txt
 }
 
 \section{错误处理}
 \lstinputlisting[style = lstCodeStyleSwift, caption = {协议}]{
-    res/pl/swfit/code/015-code-error.swift
+  res/pl/swfit/code/015-code-error.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/015-result-error.txt
+  res/pl/swfit/code/015-result-error.txt
 }
 
 \subsection{表示与抛出错误}
@@ -516,9 +504,9 @@ Swift中的错误处理不涉及解除调用栈，这是一个计算代价高昂
 标有``throws''关键字的函数被称为\emph{throwing函数}。
 函数/方法/构造器抛出错误，在函数声明参数之后、``->''之前加上``throws''关键字。
 只有throwing函数可以传递错误，
-    任何在某个非throwing函数内部署抛出的错误只能在函数内部处理。
+任何在某个非throwing函数内部署抛出的错误只能在函数内部处理。
 如果某个函数抛出任何错误，在代码调用的地方，
-    必须直接处理: ``do-catch语句''、``try?''、``try!'';要么继续将该错误传递下去。
+必须直接处理: ``do-catch语句''、``try?''、``try!'';要么继续将该错误传递下去。
 
 \subsubsection{将错误转换成可选值}
 使用``try?''将错误转换成可选值来处理错误。
@@ -526,8 +514,8 @@ Swift中的错误处理不涉及解除调用栈，这是一个计算代价高昂
 
 \subsubsection{禁用错误传递}
 有时知道某个``throwing''函数实际上在运行的时候不会抛出错误，
-    可以在表达式前面写``try!''禁用错误传递，
-    这会把调用包装在一个不会有错误抛出的运行时断言中。
+可以在表达式前面写``try!''禁用错误传递，
+这会把调用包装在一个不会有错误抛出的运行时断言中。
 如果真的抛出错误，会得到运行时错误。
 
 \subsection{指定清理操作}
@@ -548,15 +536,15 @@ Swift中的错误处理不涉及解除调用栈，这是一个计算代价高昂
 调用一个异步方法，执行会被挂起直到这个异步方法返回。
 需要在调用前增加await关键字标记此处为可能的悬点(Suspension point)。
 在一个异步方法中，执行只会在调用另一个异步方法的时候会被挂起，
-    挂起永远都不会是隐式或者优先的，意味着所有的悬点都要标记await。
+挂起永远都不会是隐式或者优先的，意味着所有的悬点都要标记await。
 代码中被await标记的悬点表明当前代码可能会暂停等待异步方法/函数的返回。
 这也被称为\emph{让出线程(yielding the thread)}，
 因为在幕后Swift会挂起这段代码在当前线程执行，转而让其他代码在当前线程执行。
 因为有await标记的代码可以被挂起，所以在程序中只有特定地方才能调用异步方法/函数:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 异步函数，方法/变量内部代码
-    \item 静态函数main()被打上@main标记的结构体、类或者枚举中的代码
-    \item 非结构化的子任务中的代码
+  \item 异步函数，方法/变量内部代码
+  \item 静态函数main()被打上@main标记的结构体、类或者枚举中的代码
+  \item 非结构化的子任务中的代码
 \end{enumerate}
 \subsection{异步序列}
 异步序列(asynchronous sequence): 每收到一个元素后对其进行处理。
@@ -575,15 +563,15 @@ for-await-in在每次循环开始的时候因为有可能需要等待下一个�
 
 \subsection{并行的调用异步方法}
 为了调用异步函数时让它附近代码并发执行，
-    定义一个常量，
-    在let前添加async关键字，然后在每次使用这个常量时添加await标记。
+定义一个常量，
+在let前添加async关键字，然后在每次使用这个常量时添加await标记。
 
 \subsection{任务和任务组}
 任务(task)是一项工作，可以作为程序的一部分并发执行。
 所有异步代码都属于某个任务。
 可以创建一个任务组并且给其中添加子任务，
-    对优先级和任务取消有了更多掌控力，
-    并可以控制任务数量。
+对优先级和任务取消有了更多掌控力，
+并可以控制任务数量。
 任务是按层级结构排列。
 同一个任务组中的任务拥有相同的父任务，每个任务都可以添加子任务。
 由于任务和任务组之间明确关系，这种方式称为结构化并发(structured concurrency)。
@@ -596,9 +584,9 @@ swift并发使用合作取消模型。
 每个任务会在执行中合适的时间点检查自己是否被取消，并会用任何合适方式来响应取消操作。
 这些方式有:
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 抛出错误
-    \item 返回nil或空集合
-    \item 返回完成一半工作
+  \item 抛出错误
+  \item 返回nil或空集合
+  \item 返回完成一半工作
 \end{enumerate}
 
 \subsection{Actors}
@@ -615,17 +603,16 @@ actor是引用类型，actor在同一时间只允许一个任务访问它的可�
 
 能够在并发域共享的类型被称为可发送类型(Sendable Type)。
 
-
 \section{可选链}
 \emph{可选链式调用}是一种可以在当前值可能为nil的可选值上请求和调用属性/方法/下标的方法。
 如果可选值有值，调用就会成功；如果可选值为nil，调用返回nil。
 多个调用可以连接在一起形成一个调用链，如果其中一个节点为nil，整个调用链都会失败，即返回nil。
 
 \lstinputlisting[style = lstCodeStyleSwift, caption = {可选链}]{
-    res/pl/swfit/code/014-code-option-chain.swift
+  res/pl/swfit/code/014-code-option-chain.swift
 }
 \lstinputlisting[style = lstCodeStylePlainText, title = {运行结果}]{
-    res/pl/swfit/code/014-result-option-chain.txt
+  res/pl/swfit/code/014-result-option-chain.txt
 }
 \subsection{使用可选链式调用代替强制解包}
 在想调用的属性/方法/下标的可选值后面放一个问号(?)，可以定一个可选链。
@@ -633,12 +620,12 @@ actor是引用类型，actor在同一时间只允许一个任务访问它的可�
 主要区别在于当可选值为nil时，可选链调用会调用失败，强制解包触发运行时错误。
 
 为了反映可选链式调用可以在nil上调用的事实，
-    不论这个调用的属性/方法/下标返回的值是不是可选值，
-    返回都是可选值。
+不论这个调用的属性/方法/下标返回的值是不是可选值，
+返回都是可选值。
 
 可选链式调用返回结果与原本返回结果具有相同类型，但是被包装成可选值。
 例如: 使用可选链式调用访问属性，当可选链式调用成功时，
-    如果属性原本返回结果是Int类型，则会变成Int?类型。
+如果属性原本返回结果是Int类型，则会变成Int?类型。
 
 \subsection{为可选链式调用定义模型类}
 可选链式调用可以调用多层属性/方法/下标。
@@ -670,17 +657,16 @@ actor是引用类型，actor在同一时间只允许一个任务访问它的可�
 通过连接多个可选链式调用在更深的模型层级访问属性/方法/下标。
 多层链式调用不会增加返回值的可选层级。
 \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 访问值不是可选，可选链式调用会返回可选值
-    \item 访问值是可选，可选链式调用不会让可选返回值变得``更可选''
-    \item 通过可选链式调用访问一个Int值，将会返回``Int?''，
-            无论使用了多少层可选链式调用
-    \item 通过可选链式调用访问``Int?''，依旧返回``Int?''，不会返回``Int??''。
+  \item 访问值不是可选，可选链式调用会返回可选值
+  \item 访问值是可选，可选链式调用不会让可选返回值变得``更可选''
+  \item 通过可选链式调用访问一个Int值，将会返回``Int?''，
+    无论使用了多少层可选链式调用
+  \item 通过可选链式调用访问``Int?''，依旧返回``Int?''，不会返回``Int??''。
 \end{enumerate}
 
 \subsection{在方法的可选返回值上进行可选链式调用}
 可以在一个可选值上通过可选链式调用来调用方法，
-    根据需要继续在方法的可选返回值上进行可选链式调用。
+根据需要继续在方法的可选返回值上进行可选链式调用。
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

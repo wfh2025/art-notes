@@ -7,9 +7,10 @@
 \subsection{错误构造对象}
 \inputCppFile[{错误构造对象方式}]{res/pl/cpp/code/001-constructor.cpp}
 
-\begin{enumerate}[labelindent=0pt, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item ``A a()''这种\emph{无法构造对象}
-    \item 编译器当成函数声明
+\begin{enumerate}[labelindent=0pt, itemsep=0pt, parsep=0pt,
+    topsep=0pt, partopsep=0pt]
+  \item ``A a()''这种\emph{无法构造对象}
+  \item 编译器当成函数声明
 \end{enumerate}
 
 \subsection{正确调用无参构造函数}
@@ -17,9 +18,10 @@
 
 \subsection{无拷贝构造函数使用=赋值对象}
 \inputCppFile[{无拷贝构造函数使用=赋值对象}]{ res/pl/cpp/code/003-constructor.cpp}
-\begin{enumerate}[labelindent=0pt, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 这里多产了一次析构函数，说明多产生一个对象
-    \item 此处是直接赋值，若是堆内存指针，可能会异常
+\begin{enumerate}[labelindent=0pt, itemsep=0pt, parsep=0pt,
+    topsep=0pt, partopsep=0pt]
+  \item 这里多产了一次析构函数，说明多产生一个对象
+  \item 此处是直接赋值，若是堆内存指针，可能会异常
 \end{enumerate}
 
 \subsection{使用=调用拷贝构造函数}
@@ -36,11 +38,11 @@
 
 \subsection{运算符等号重载}
 \inputCppFile[{运算符等号重载}]{res/pl/cpp/code/008-operator-equal.cpp}
-\begin{enumerate}[labelindent=0pt, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
-    \item 当前``=''没有产生新的对象
-    \item 注意不要和前面的使用``=''拷贝构造函数混淆
+\begin{enumerate}[labelindent=0pt, itemsep=0pt, parsep=0pt,
+    topsep=0pt, partopsep=0pt]
+  \item 当前``=''没有产生新的对象
+  \item 注意不要和前面的使用``=''拷贝构造函数混淆
 \end{enumerate}
-
 
 \section{智能指针}
 \subsection{unique\_ptr基本使用}
@@ -48,26 +50,22 @@
 
 \section{引用}
 \subsection{引用不能重定位}
-\inputCppFile[{引用不能重定位}]{res/pl/cpp/code/010-ref-not-redirect.cpp}
+\lstinputlisting[style=lstCodeStyleCpp,
+caption={引用不能重定位}]{res/pl/cpp/code/010-ref-not-redirect.cpp}
 
 \section{初始化}
 \subsection{初始化变量}
-% \lstinputlisting[style = CodeLstStyleCpp, caption = {初始化变量}]{
-%     res/pl/cpp/code/011-init.cpp
-% }
+\lstinputlisting[style=lstCodeStyleCpp,
+caption={初始化变量}]{res/pl/cpp/code/011-init.cpp}
 
 \section{继承}
 \subsection{简单继承}
-% \lstinputlisting[style = CodeLstStyleCpp, caption = {简单继承}]{
-%     res/pl/cpp/code/012-inherit.cpp
-% }
+\lstinputlisting[style=lstCodeStyleCpp,
+caption={简单继承}]{res/pl/cpp/code/012-inherit.cpp}
 
 \subsection{public继承}
-% \lstinputlisting[style = CodeLstStyleCpp, caption = {public继承}]{
-%     res/pl/cpp/code/013-inherit-public.cpp
-% }
+\lstinputlisting[style=lstCodeStyleCpp,
+caption={public继承}]{res/pl/cpp/code/013-inherit-public.cpp}
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
